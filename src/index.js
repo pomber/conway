@@ -17,14 +17,14 @@ async function post(lastId, delay = 600, count = 33) {
   const firstTweet = await twitter.tweet({
     status:
       status1 +
-      `https://twitter.com/mauritscorneIis/status/${secondTweetIdGuess}`,
+      `➡️ https://twitter.com/mauritscorneIis/status/${secondTweetIdGuess} ➡️`,
     // attachment_url: `https://twitter.com/mauritscorneIis/status/${secondTweetIdGuess}`,
   });
 
   const secondTweet = await twitter.tweet({
     status:
       status2 +
-      `https://twitter.com/mauritscorneIis/status/${firstTweet.id_str}`,
+      `➡️ https://twitter.com/mauritscorneIis/status/${firstTweet.id_str} ➡️`,
     // attachment_url: `https://twitter.com/mauritscorneIis/status/${firstTweet.id_str}`,
   });
 
