@@ -1,0 +1,4 @@
+name: "Game of Life bot"
+runs:
+  using: "node12"
+  main: "action.js"

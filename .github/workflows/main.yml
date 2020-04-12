@@ -1,0 +1,17 @@
+on:
+  schedule:
+    - cron: "40 * * * *"
+
+jobs:
+  extract_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Bot
+        uses: ./
+        env:
+          consumer_key: ${{ secrets.consumer_key }}
+          consumer_secret: ${{ secrets.consumer_secret }}
+          access_token: ${{ secrets.access_token }}
+          access_token_secret: ${{ secrets.access_token_secret }}
