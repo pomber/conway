@@ -1,7 +1,7 @@
 const snowflake = require("./snowflake");
 const twitter = require("./twitter");
 
-async function post(lastId, delay = 600, count = 30) {
+async function post(lastId, delay = 600, count = 28) {
   if (count <= 0) return;
 
   console.log(count);
